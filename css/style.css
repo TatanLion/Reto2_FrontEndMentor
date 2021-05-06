@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    padding: 30px;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2.2;
+}
+
+img{
+    margin-bottom: 30px;
+}
+
+.contenedor{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.cartas{
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carta1{
+    background-color: hsl(31, 77%, 52%);
+    width: 375px;
+    padding: 50px;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.carta2{
+    background-color: hsl(184, 100%, 22%);
+    width: 375px;
+    padding: 50px;
+}
+
+.carta3{
+    background-color: hsl(179, 100%, 13%);
+    width: 375px;
+    padding: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.titulo{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.texto{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 18px 40px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
+}
+
+.btnco{
+    color: hsl(31, 77%, 52%);
+}
+
+.btnco1{
+    color: hsl(184, 100%, 22%);
+}
+
+.btnco2{
+    color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 1200px){
+    .cartas{
+        flex-direction: row;
+    }
+    body{
+        padding: 0;
+    }
+    .carta1{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .carta3{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
